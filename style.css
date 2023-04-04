@@ -107,25 +107,48 @@ p {
     transform: scale(1.1);
 }
 
+.right_down_left {
+    position: relative;
+}
+
+.right_down_left::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+.right_down_left:hover::after {
+    width: 100%;
+}
+
 .head3 {
     position: relative;
+    display: inline-block;
 }
 
 .head3::after {
     content: '';
     position: absolute;
-    top: 52px;
     left: 0;
+    top: 55px;
     width: 0;
     height: 4px;
     background-color: #342415;
     transition: width 0.3s ease-in-out;
 }
 
-.head3:hover::after {
+.right_down_left:hover .head3::after {
     width: 100%;
 }
 
+.icon_holder {
+    margin: 0;
+}
 
 .right_up:hover img {
     transform: scale(1.1);
