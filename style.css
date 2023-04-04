@@ -1,0 +1,632 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    padding: 0px 30px;
+    background-color: black;
+}
+
+.navi {
+    border-radius: 100rem;
+    border: 1px solid white;
+}
+
+.navi_div {
+    width: 100%;
+    height: 56px;
+    background-color: rgba(155, 134, 79, 0.2);
+    margin: 0px 0px 10px 10px;
+    display: flex;
+    position: relative;
+}
+
+.navi_logo {
+    height: 100%;
+    width: 370px;
+    background-color: rgba(155, 134, 79, 0.2);
+    color: #e0d6c2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    margin: 2px;
+}
+
+.navi_item {
+    height: calc(100% - 4px);
+    background-color: transparent;
+    color: #e0d6c2;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 35px;
+    margin: 2px;
+}
+
+.navi_item:hover {
+    background-color: #e0d6c2;
+    color: black;
+}
+
+.navi_right {
+    position: absolute;
+    right: 0;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+p {
+    font-size: 1em;
+    margin: 0px;
+}
+
+.card {
+    border-radius: 30px;
+    margin: 0px 0px 10px 10px;
+}
+
+.left {
+    background: #e0d6c2;
+    width: calc(33% - 10px);
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right {
+    display: inline-block;
+    width: 67%;
+}
+
+.right_up {
+    background: #8f8868;
+}
+
+.right_down {
+    display: flex;
+    align-items: stretch;
+}
+
+.right_down_left {
+    background: #976c54;
+    display: inline-block;
+    width: calc(50% - 5px);
+}
+
+.right_down_right {
+    background: #b5a38d;
+    display: inline-block;
+    width: calc(50% - 5px);
+}
+
+.left:hover img {
+    transform: scale(1.1);
+}
+
+.head3 {
+    position: relative;
+}
+
+.head3::after {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #342415;
+    transition: width 0.3s ease-in-out;
+}
+
+.head3:hover::after {
+    width: 100%;
+}
+
+
+.right_up:hover img {
+    transform: scale(1.1);
+}
+
+.right_down_left:hover img {
+    transform: scale(1.1);
+}
+
+.right_down_right:hover img {
+    transform: scale(1.4);
+}
+
+.locat {
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+.display_image {
+    border-radius: 14px;
+    height: auto;
+    width: calc(100% - 30px);
+    object-fit: fill;
+    margin: 0px 10px 10px 10px;
+}
+
+.card_header {
+    padding: 30px 30px 10px 30px;
+}
+
+.d2 .head h2 {
+    margin-left: 30px;
+}
+
+.head h2, u {
+    font-size: 28px;
+    font-family: 'Suwannaphum', serif;
+    font-weight: 700;
+}
+
+.arrow-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 15px;
+    height: 30px;
+}
+
+.arrow-container i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow-container i.visible {
+    left: 0;
+}
+
+.arrow-container i.hidden {
+    left: -15px;
+}
+
+.left:hover i.visible, .right_up:hover i.visible, .right_down_left:hover i.visible, .right_down_right:hover i.visible {
+    left: 15px;
+}
+
+.left:hover i.hidden, .right_up:hover i.hidden, .right_down_left:hover i.hidden, .right_down_right:hover i.hidden {
+    left: 0;
+}
+
+.locat {
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+
+.card_footer {
+    display: flex;
+    border-top: 1px solid rgba(52, 36, 21, 0.35);
+    justify-content: space-between;
+    padding: 20px 20px 15px 20px;
+}
+
+.img_align {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.d2 {
+    display: inline-block;
+    width: calc(60% - 30px);
+    vertical-align: top;
+}
+
+.img1 {
+    height: 34rem;
+    padding: 0px;
+    margin: 0px 30px 30px 30px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.image1 {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.img2 {
+    display: inline-block;
+    width: 59%;
+    height: 14rem;
+    width: 50%;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 30px 30px 30px 0px;
+}
+
+.image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0px;
+    border-radius: 18px;
+    transition: 0.5s all ease-in-out;
+}
+
+.img3 {
+    height: 10rem;
+    border-radius: 18px;
+    margin: 20px 20px 0px 20px;
+    overflow: hidden;
+}
+
+.image3 {
+    margin-top: 17px;
+    margin: 0;
+    border-radius: 18px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.img4 {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image4 {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    margin: 0px;
+    transition: 0.8s all ease-in-out;
+}
+
+.h4 {
+    display: inline-block;
+    padding-right: 0px;
+}
+
+.img4 {
+    height: 72px;
+    width: 72px;
+    float: right;
+    margin: 20px;
+    vertical-align: top;
+    margin-left: 0px;
+}
+
+.align_header {
+    height: 92px;
+}
+
+.right_down_left .card_header h2 {
+    font-size: 56px;
+    font-family: 'Suwannaphum', serif;
+}
+
+.head3 {
+    display: inline-block;
+    width: auto;
+    color: #342415;
+}
+
+.icon_holder {
+    float: right;
+    color: #342415;
+}
+
+.iconh {
+    font-size: 36px;
+    margin-right: -4px;
+}
+
+.half {
+    display: inline-block;
+    width: 56%;
+    font-size: 14px;
+}
+
+.half_right {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.domain_details hr {
+    border: 1px solid black;
+}
+
+.h4 .h2 {
+    margin: 0px;
+}
+
+.details, .domain_details {
+    padding: 0px 30px 30px 30px;
+}
+
+.right_down_left h2 {
+    margin: 0px;
+    margin-top: -25px;
+}
+
+.gs {
+    display: inline-block;
+}
+
+.head4 {
+    margin: 0px;
+    padding: 20px 0px 0px 30px;
+}
+
+@media (max-width: 540px) {
+    body {
+        padding: 10px 10px;
+        background-color: black;
+        display: block;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    .visible_max {
+        display: none;
+    }
+
+    .navi_logo {
+        width: calc(100% - 160px);
+    }
+
+    .content {
+        display: block;
+        width: 100%;
+    }
+
+    .card {
+        border-radius: 30px;
+        margin: 0px 0px 10px 10px;
+    }
+
+    .left {
+        background: #e0d6c2;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+
+    .right {
+        display: block;
+        width: 100%;
+    }
+
+    .right_up {
+        background: #8f8868;
+    }
+
+    .right_down {
+        display: block;
+    }
+
+    .right_down_left {
+        background: #976c54;
+        display: block;
+        width: 100%;
+    }
+
+    .right_down_right {
+        background: #b5a38d;
+        display: block;
+        width: 100%;
+    }
+
+    .img1 {
+        height: auto;
+        width: calc(100% - 20px);
+        margin: 0px 10px 20px 10px;
+    }
+
+    .image1 {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .img_align {
+        display: block;
+    }
+
+    .d2 {
+        width: 100%;
+        display: block;
+    }
+
+    .img2 {
+        display: block;
+        width: calc(100% - 20px);
+        overflow: hidden;
+        padding: 0px 10px;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 18px;
+    }
+
+    .img3 {
+        height: auto;
+        width: calc(100% - 20px);
+        margin: 10px 10px 0px 10px;
+        padding-top: 10px;
+    }
+
+    .image3 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .h4 {
+        display: inline-block;
+    }
+
+    .h4 h2 {
+        margin: 0px;
+    }
+
+    .img4 {
+        width: 72px;
+        float: right;
+        margin: 20px;
+        vertical-align: top;
+        margin-left: 0px;
+    }
+
+    .image4 {
+        height: 72px;
+        width: 72px;
+        border-radius: 50%;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 840px) {
+    body {
+        padding: 4px 4px;
+        background-color: black;
+        display: block;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    .visible_max {
+        display: none;
+    }
+
+    .navi_logo {
+        width: calc(100% - 160px);
+    }
+
+    .content {
+        display: block;
+        width: 100%;
+    }
+
+    .card {
+        border-radius: 30px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .left {
+        background: #e0d6c2;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+
+    .right {
+        display: block;
+        width: 100%;
+    }
+
+    .right_up {
+        background: #8f8868;
+    }
+
+    .right_down {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .right_down_left {
+        background: #976c54;
+        display: inline-block;
+        width: calc(50% - 10px);
+    }
+
+    .right_down_right {
+        background: #b5a38d;
+        display: inline-block;
+        width: calc((50% - 10px));
+        margin-left: 10px;
+    }
+
+    .img1 {
+        height: 100%;
+    }
+
+    .image1 {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img2 {
+        display: inline-block;
+        width: calc(47% - 55px);
+        height: 10rem;
+        overflow: hidden;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 18px;
+    }
+
+    .img3 {
+        height: 10rem;
+    }
+
+    .image3 {
+        margin-top: 17px;
+        border-radius: 18px;
+        padding-left: 4px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .h4 {
+        display: inline-block;
+    }
+
+    .h4 h2 {
+        margin: 0px;
+    }
+
+    .img4 {
+        width: 72px;
+        float: right;
+        margin: 20px;
+        vertical-align: top;
+        margin-left: 0px;
+    }
+
+    .image4 {
+        height: 72px;
+        width: 72px;
+        border-radius: 50%;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1140px) {
+    .navi_logo {
+        width: 190px;
+    }
+}
