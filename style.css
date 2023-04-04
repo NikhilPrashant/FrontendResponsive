@@ -143,7 +143,7 @@ p {
 }
 
 .right_down_left:hover .head3::after {
-    width: 100%;
+    width: 100% !important;
 }
 
 .icon_holder {
